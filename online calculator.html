@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online calculator.</title>
+    <link rel="stylesheet" href="online calculator.css">
+</head>
+<body>
+    <h1>Online calculator For calculating</h1>
+    <h3>-:By Ahmad Zubair Afghanmal</h3>
+    <br>
+    <img src="afghanmal1.jpeg" alt="The author photo">
+<section>
+    <footer class="footer">Copyright</footer>
+</section>
+</body>
+<form name="form1" class="calculator" action="online calculator.html" method="post">
+    <input type="text" name="answer" id="display">
+    <br>
+    <br>
+    <input type="button" class="buttondesign" value="Clear"onclick="form1.answer.value+=''">
+    <input type="button" class="buttondesign" value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.valuelength*1-1)">
+    <input type="button" class="buttondesign" value="00" onclick="form1.answer.value+='00'">
+    <br>
+    <br>
+    <input type="button" class="buttondesign" value="7" onclick="form1.answer.value+='7'">
+    <input type="button" class="buttondesign" value="8" onclick="form1.answer.value+='8'">
+    <input type="button" class="buttondesign" value="9" onclick="form1.answer.value+='9'">
+    <input type="button" class="operatordesign" value="*" onclick="form1.answer.value+='*'">
+    <br>
+    <br>
+    <input type="button" class="buttondesign" value="4" onclick="form1.answer.value+='4'">
+    <input type="button" class="buttondesign" value="5" onclick="form1.answer.value+='5'">
+    <input type="button" class="buttondesign" value="6" onclick="form1.answer.value+='6'">
+    <input type="button" class="operatordesign" value="-" onclick="form1.answer.value+='-'">
+    <br>
+    <br>
+    <input type="button" class="buttondesign" value="1" onclick="form1.answer.value+='1'">
+    <input type="button" class="buttondesign" value="2" onclick="form1.answer.value+='2'">
+    <input type="button" class="buttondesign" value="3" onclick="form1.answer.value+='3'">
+    <input type="button" class="operatordesign" value="+" onclick="form1.answer.value+='+'">
+    <br>
+    <br>
+    <input type="button" class="buttondesign" value="." onclick="form1.answer.value+='.'">
+    <input type="button" class="operatordesign" value="/" onclick="form1.answer.value+='/'">
+    <input type="button" class="operatordesign" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+    <br><br>
+    <input type="button" id="zero" value="0" onclick="form1.answer.value+='0'">
+</form>
+</html>
